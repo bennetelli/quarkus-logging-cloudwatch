@@ -1,4 +1,4 @@
-package io.quarkus.logging.cloudwatch;
+package io.quarkiverse.logging.cloudwatch;
 
 import java.util.Optional;
 import java.util.logging.Level;
@@ -14,10 +14,10 @@ import io.quarkus.runtime.annotations.ConfigRoot;
 public class CWConfig {
 
     /**
-     * Determine whether to enable the Loki logging extension.
+     * Determine whether to enable the Cloudwatch logging extension.
      */
     @ConfigItem(name = ConfigItem.PARENT)
-    boolean enable;
+    boolean enabled;
 
     /**
      * CW access key ID
